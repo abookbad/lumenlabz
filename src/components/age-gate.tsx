@@ -6,7 +6,7 @@ import { setCookie, getCookie } from "../lib/utils";
 export default function AgeGate() {
   const [open, setOpen] = useState(false);
   const firstButtonRef = useRef<HTMLButtonElement | null>(null);
-  const lastButtonRef = useRef<HTMLButtonElement | null>(null);
+  const lastButtonRef = useRef<HTMLAnchorElement | null>(null);
 
   useEffect(() => {
     const verified = getCookie("llz_age_verified") === "true";
